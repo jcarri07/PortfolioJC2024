@@ -6,9 +6,7 @@ body {
   display: flex;
   margin: 0;
   text-decoration: none;
-  background-color: #0F1630;
-  min-width: 320px;
-  min-height: 100vh;
+  background-color: #0f1630;
   width: 100%;
   height: 100%; 
 }
