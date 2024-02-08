@@ -8,7 +8,7 @@ interface IconTypes {
 export default function IconSquare({type}: IconTypes) {
   return (
     
-    <div className="flex justify-center items-center bg-gradient-to-r from-tahiti-primary via-tahiti-secondary to-tahiti-tertiary w-12 h-12 rounded-lg shadow-lg shadow-cyan-500/50">
+    <div className="flex justify-center items-center bg-gradient-to-r border-gray-100 border-2 from-tahiti-primary via-tahiti-secondary to-tahiti-tertiary w-12 h-12 rounded-lg shadow-lg shadow-cyan-500/50">
        {
         type === "phone" ? 
         <IconPhone size={20} color="#ffff" />: type === "email" ? 

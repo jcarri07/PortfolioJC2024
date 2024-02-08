@@ -5,7 +5,7 @@ interface AncleTypes {
 }
 export default function Ancle({ src, text, active = false }: AncleTypes) {
   return (
-    <a className={`text-${active ? " text-tahiti-primary" :"white"} font-sans text-lg font-semibold`} href={src}>
+    <a className={`text-${active ? " text-tahiti-primary" :"white"} font-sans tablet:text-xl smartphone:text-md font-semibold`} href={src}>
       {text}
     </a>
   );

@@ -1,4 +1,4 @@
-import { IconBrandFigma, IconBrandJavascript, IconBrandNodejs, IconBrandReact, IconBrandReactNative, IconBrandTailwind, IconBrandTypescript, IconHtml } from "@tabler/icons-react";
+import { IconBrandBootstrap, IconBrandFigma, IconBrandJavascript, IconBrandNodejs, IconBrandReact, IconBrandReactNative, IconBrandTailwind, IconBrandTypescript, IconHtml } from "@tabler/icons-react";
 import Ancle from "./components/Ancle";
 import Article from "./components/Article";
 import Card from "./components/Card";
@@ -20,9 +20,9 @@ function App() {
     <div className="flex flex-col w-full items-center smartphone:items-start bg-tahiti-background">
       <div className="flex flex-col w-2/3 py-10 smartphone:w-full">
         <Header />
-      </div> 
+      </div>
       <div className="flex flex-col w-full h-2/3 justify-center items-center smartphone:items-start smartphone:p-0">
-        <div className="flex flex-col h-full w-2/3 py-10 pl-5">
+        <div className="flex flex-col h-full w-2/3 smartphone:w-full py-10 pl-5">
           <div className="pb-5">
             <GrayTtitle text="Soy Jose Carrizales," />
           </div>
@@ -40,7 +40,7 @@ function App() {
           <Subtitle text="Sobre mi" />
           <p className="font-mono text-left text-balance text-sm smartphone:w-full smartphone:px-10">
             Soy José Carrizales, ingeniero de sistemas especializado en
-            programación web, diseño y maquetación de aplicaciones web y  
+            programación web, diseño y maquetación de aplicaciones web y
             móviles. Con una sólida formación en ingeniería de software, ofrezco
             una amplia gama de servicios para ayudar a empresas y particulares a
             dar vida a sus ideas de aplicaciones web y móviles. Como
@@ -56,9 +56,9 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center h-2/3 py-10 w-[65%] smartphone:w-full smartphone:items-center ">
+      <div className="flex flex-col items-center h-2/3 py-10 smartphone:w-full smartphone:items-center ">
         <Subtitle text="PORTFOLIO" />
-        <div className="flex justify-center items-center w-full space-x-5">
+        <div className="flex justify-center items-center w-full gap-4">
           <Ancle text="Mobile App" src="#" active />
           <Ancle text="WebSite" src="#" />
           <Ancle text="Desktop" src="#" />
@@ -147,47 +147,54 @@ function App() {
       <div className="flex flex-row w-full justify-center items-center pt-10">
         <Subtitle text="EXPERIENCE" />
       </div>
-      <div className="flex flex-col flex-wrap w-full space-y-10 pb-20 px-5">
-        <div className="flex flex-row justify-around ">
-          <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col flex-wrap w-full space-y-10 pb-20 ">
+        <div className="flex flex-row justify-between  tablet:justify-around px-5">
+          <div className="flex flex-col justify-center items-center border-gray-700 rounded-lg w-1/4 h-24 border-2 shadow-md shadow-cyan-400/30">
             <IconBrandReact size={iconsSize} color="#4EAEDA" />
-            <p className=" text-white font-mono">ReactJs</p>
+            <p className=" text-gray-400 font-semibold font-mono smartphone:text-[14px] smartphone:text-center">ReactJs</p>
           </div>
-          <div className="flex flex-col justify-center items-center">
+          <div className="flex flex-col justify-center items-center border-gray-700 rounded-lg w-1/4 h-24 border-2 shadow-md shadow-cyan-400/30">
             <IconBrandJavascript size={iconsSize} color="yellow" />
-            <p className=" text-white font-mono">JavaScript</p>
+            <p className=" text-gray-400 font-semibold font-mono smartphone:text-[14px] smartphone:text-center">JavaScript</p>
           </div>
-          <div className="flex flex-col justify-center items-center">
+          <div className="flex flex-col justify-center items-center border-gray-700 rounded-lg w-1/4 h-24 border-2 shadow-md shadow-cyan-400/30">
             <IconBrandTypescript size={iconsSize} color="#4EAEDA" />
-            <p className=" text-white font-mono">TypeScript</p>
-          </div>
-          <div className="flex flex-col justify-center items-center">
-            <IconBrandReactNative size={iconsSize} color="#4EAEDA" />
-            <p className=" text-white font-mono">React Native</p>
+            <p className=" text-gray-400 font-semibold font-mono smartphone:text-[14px] smartphone:text-center">TypeScript</p>
           </div>
         </div>
-        <div className="flex flex-row justify-around">
-          <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-row justify-between tablet:justify-around px-5">
+          <div className="flex flex-col justify-center items-center border-gray-700 rounded-lg w-1/4 h-24 border-2 shadow-md shadow-cyan-400/30">
             <IconBrandNodejs size={iconsSize} color="green" />
-            <p className=" text-white font-mono">NodeJs</p>
+            <p className=" text-gray-400 font-semibold font-mono smartphone:text-[14px] smartphone:text-center">NodeJs</p>
           </div>
-          <div className="flex flex-col justify-center items-center">
+          <div className="flex flex-col justify-center items-center border-gray-700 rounded-lg w-1/4 h-24 border-2 shadow-md shadow-cyan-400/30">
             <IconHtml size={iconsSize} color="orange" />
-            <p className=" text-white font-mono">HTML 5</p>
+            <p className=" text-gray-400 font-semibold font-mono smartphone:text-[14px] smartphone:text-center">HTML 5</p>
           </div>
-          <div className="flex flex-col justify-center items-center">
+          <div className="flex flex-col justify-center items-center border-gray-700 rounded-lg w-1/4 h-24 border-2 shadow-md shadow-cyan-400/30">
             <IconBrandFigma size={iconsSize} color="white" />
-            <p className=" text-white font-mono">Figma</p>
-          </div>
-          <div className="flex flex-col justify-center items-center">
-            <IconBrandTailwind size={iconsSize} color="#4EAEDA" />
-            <p className=" text-white font-mono">Tailwind</p>
+            <p className=" text-gray-400 font-semibold font-mono smartphone:text-[14px] smartphone:text-center">Figma</p>
           </div>
         </div>
-      </div> 
+        <div className="flex flex-row justify-between tablet:justify-around px-5">
+          <div className="flex flex-col justify-center items-center border-gray-700 rounded-lg w-1/4 h-24 border-2 shadow-md shadow-cyan-400/30">
+            <IconBrandTailwind size={iconsSize} color="#4EAEDA" />
+            <p className=" text-gray-400 font-semibold font-mono smartphone:text-[14px] smartphone:text-center">Tailwind</p>
+          </div>
+          <div className="flex flex-col justify-center items-center border-gray-700 rounded-lg w-1/4 h-24 border-2 shadow-md shadow-cyan-400/30">
+            <IconBrandReactNative size={iconsSize} color="#4EAEDA" />
+            <p className=" text-gray-400 font-semibold font-mono smartphone:text-[14px] smartphone:text-center">React Native</p>
+          </div>
+          <div className="flex flex-col justify-center items-center border-gray-700 rounded-lg w-1/4 h-24 border-2 shadow-md shadow-cyan-400/30">
+            <IconBrandBootstrap size={iconsSize} color="#4EAEDA" />
+            <p className=" text-gray-400 font-semibold font-mono smartphone:text-[14px] smartphone:text-center">Bootstrap</p>
+          </div>
+        </div>
+      </div>
       <div className="flex flex-col items-center h-2/4 w-full rounded-tr-[100px] smartphone:rounded-tr-[60px] smartphone:rounded-tl-[60px] rounded-tl-[100px] bg-gradient-to-r from-tahiti-primary via-tahiti-secondary to-tahiti-tertiary shadow-lg shadow-cyan-500/50">
-        <Subtitle text="CONTACT" />
-        <div className="flex flex-row flex-wrap gap-4 justify-between w-full ">
+        {/* <Subtitle text="CONTACT" /> */}
+        <h3 className=" py-5 text-2xl text-white font-semibold font-mono">CONTACTO</h3>
+        <div className="flex flex-row flex-wrap tablet:flex-nowrap gap-4 justify-between w-full ">
           <div className="flex  flex-col items-center w-full">
             <h3 className=" text-md font-mono text-white font-semibold pb-5">
               Drop me a message
@@ -204,23 +211,21 @@ function App() {
           </div>
         </div>
         <div className="flex flex-col w-full px-5 space-y-2">
-              <div className="flex flex-row items-center w-full">
-                <IconSquare type="phone" />
-                <p className="text-white font-mono ml-2">+58 414 400 15 64</p>
-              </div>
-              <div className="flex flex-row items-center w-full">
-                <IconSquare type="email" />
-                <p className="text-white font-mono ml-2">
-                  carrizalesj5@gmail.com
-                </p>
-              </div>
-              <div className="flex flex-row items-center w-full">
-                <IconSquare type="location" />
-                <p className="text-white font-mono ml-2">
-                  Puerto Cabello, Carabobo, Venezuela.
-                </p>
-              </div>
-            </div>
+          <div className="flex flex-row  items-center w-full">
+            <IconSquare type="phone" />
+            <p className="text-white font-mono ml-2">+58 414 400 15 64</p>
+          </div>
+          <div className="flex flex-row items-center w-full">
+            <IconSquare type="email" />
+            <p className="text-white font-mono ml-2">carrizalesj5@gmail.com</p>
+          </div>
+          <div className="flex flex-row items-center w-full">
+            <IconSquare type="location" />
+            <p className="text-white font-mono ml-2 text-sm">
+              Puerto Cabello, Carabobo, Venezuela.
+            </p>
+          </div>
+        </div>
         <div className=" pt-10" />
         <hr className=" bg-white w-[85%] opacity-60" />
         <div className="flex flex-row justify-between items-center w-full py-5 px-5">

@@ -12,7 +12,7 @@ export default function ImageShadow({ src, horizontal }: ImageShadowTypes) {
             <img
               src={src}
               alt="Jose Carrizales"
-              className="h-72 w-96 smartphone:h-40 smartphone:w-60 z-30 rounded-2xl object-cover"
+              className="h-72 w-96 smartphone:h-40 smartphone:w-60 z-30 rounded-2xl object-cover border-white border-2"
             />
           </div>
           <div
@@ -28,7 +28,7 @@ export default function ImageShadow({ src, horizontal }: ImageShadowTypes) {
               src={src}
               alt="Jose Carrizales"
               className="h-96 w-80
-          } z-30 rounded-2xl object-fill"
+          } z-30 rounded-2xl object-fill border-white border-2"
             />
           </div>
           <div

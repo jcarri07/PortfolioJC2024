@@ -22,19 +22,20 @@
 import { IconMenuDeep, IconX } from '@tabler/icons-react';
 import { useState } from 'react';
 import logo from '../assets/Logo_JC_letters.png';
+import PrimaryButton from './PrimaryButton';
 
 const Header = () => {
     const Links =[
-        {name:"HOME",link:"/"},
-        {name:"SERVICE",link:"/"},
-        {name:"ABOUT",link:"/"},
-        {name:"CONTACT",link:"/"},
+        {name:"INICIO",link:"/"},
+        {name:"SOBRE MI",link:"/"},
+        {name:"PORTAFOLIO",link:"/"},
+        {name:"EXPERIENCIA",link:"/"},
       ];
       const [open, setOpen] =useState(false);
 
     return (
         <div className='shadow-tablet w-full fixed top-0 left-0 z-50'>
-           <div className='tablet:flex items-center justify-between bg-tahiti-background py-4 tablet:px-10 px-7'>
+           <div className='tablet:flex items-center justify-between bg-tahiti-background py-4 px-5 '>
             <div className='font-bold text-2xl cursor-pointer flex items-center gap-1'>
               <img src={logo} alt="LOGO JC" className="w-14 h-14" />
             </div>
@@ -46,11 +47,11 @@ const Header = () => {
             <ul className={`tablet:flex tablet:items-center tablet:pb-0 pb-12 absolute tablet:static bg-tahiti-background tablet:z-40 z-40 left-0 w-full tablet:w-auto tablet:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-12' : 'top-[-490px]'}`}>
                 {
                     Links.map((link) => (
-                    <li className=' tablet:ml-8  tablet:my-0 my-7 font-semibold'>
-                        <a href={link.link} className='text-gray-800 hover:text-blue-400 duration-500'>{link.name}</a>
+                    <li className=' tablet:ml-8  tablet:my-0 my-7 font-semibold mr-5'>
+                        <a href={link.link} className='text-white hover:text-tahiti-primary duration-500 text-sm'>{link.name}</a>
                     </li>))
                 }
-                <button className='btn bg-blue-600 text-white tablet:ml-8 font-semibold px-3 py-1 rounded duration-500  tablet:static'>Get Started</button>
+                <PrimaryButton size='sm' text='Contacto' />
             </ul>
            </div>
         </div>

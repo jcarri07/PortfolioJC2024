@@ -7,8 +7,8 @@ interface TitleTypes {
 }
 export default function Title({ text, dot}: TitleTypes) {
   return (
-    <div className="flex flex-row">
-      <h1 className= " smartphone:text-5xl text-white text-8xl font-extrabold font-serif tracking-wide">
+    <div className="flex flex-row w-full ">
+      <h1 className= " smartphone:text-5xl text-white laptop:text-6xl text-9xl font-extrabold font-serif tracking-wide">
         {text}
       </h1>
       {dot && <Dot />}
