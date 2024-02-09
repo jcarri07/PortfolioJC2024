@@ -5,6 +5,7 @@
 body {
   display: flex;
   margin: 0;
+  padding: 0;
   text-decoration: none;
   background-color: #0f1630;
   width: 100%;

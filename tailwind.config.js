@@ -1,20 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     screens: {
-      'smartphone': '280px',
+      smartphone: "280px",
       // => @media (min-width: 376px) { ... }
-      'tablet': '640px',
+      tablet: "640px",
       // => @media (min-width: 640px) { ... }
 
-      'laptop': '1024px',
+      laptop: "1280px",
       // => @media (min-width: 1024px) { ... }
 
-      'desktop': '1280px',
+      desktop: "1440px",
       // => @media (min-width: 1280px) { ... }
     },
     extend: {
@@ -31,4 +28,4 @@ export default {
     },
   },
   plugins: [],
-}
+};
