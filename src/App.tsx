@@ -27,7 +27,7 @@ const iconsSize = 40;
 
 function App() {
   return (
-    <div className="flex flex-col w-screen h-screen snap-mandatory snap-y overflow-auto items-center smartphone:items-start laptop:px-60 bg-tahiti-background">
+    <div className="flex flex-col laptop:w-screen laptop:h-screen laptop:snap-mandatory laptop:snap-y laptop:overflow-auto items-center smartphone:items-start laptop:px-60 bg-tahiti-background">
       <div className="flex flex-col w-2/3 py-10 smartphone:w-full">
         <Header />
       </div>
@@ -114,7 +114,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center snap-start justify-around w-full laptop:top-0 laptop:sticky laptop:min-h-screen laptop:bg-tahiti-background">
+      <div className="flex flex-col items-center laptop:snap-start justify-around w-full laptop:top-0 laptop:sticky laptop:min-h-screen laptop:bg-tahiti-background">
         <div className="flex flex-row items-center justify-center flex-wrap place-content-between gap-4">
           <div className="flex flex-col w-full items-center">
             <Subtitle text="SERVICIOS" />
@@ -137,7 +137,7 @@ function App() {
           />
         </div>
       </div>
-      <div className="flex flex-col snap-start flex-wrap w-full space-y-10 pb-20 laptop:top-20 laptop:sticky laptop:min-h-screen laptop:bg-tahiti-background">
+      <div className="flex flex-col laptop:snap-start flex-wrap w-full space-y-10 pb-20 laptop:top-20 laptop:sticky laptop:min-h-screen laptop:bg-tahiti-background">
         <div className="flex flex-row w-full justify-center items-center">
           <Subtitle text="EXPERIENCE" />
         </div>
@@ -202,7 +202,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center snap-start w-full rounded-tr-[100px] laptop:top-0 laptop:sticky laptop:min-h-[90%] laptop:bg-tahiti-background smartphone:rounded-tr-[60px] smartphone:rounded-tl-[60px] rounded-tl-[100px] bg-gradient-to-r from-tahiti-primary via-tahiti-secondary to-tahiti-tertiary shadow-lg shadow-cyan-500/50">
+      <div className="flex flex-col items-center laptop:snap-start w-full rounded-tr-[100px] laptop:top-0 laptop:sticky laptop:min-h-[90%] laptop:bg-tahiti-background smartphone:rounded-tr-[60px] smartphone:rounded-tl-[60px] rounded-tl-[100px] bg-gradient-to-r from-tahiti-primary via-tahiti-secondary to-tahiti-tertiary shadow-lg shadow-cyan-500/50">
         {/* <Subtitle text="CONTACT" /> */}
         <h3 className=" py-5 text-2xl text-white font-semibold font-mono">
           CONTACTO
